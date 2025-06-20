@@ -10,7 +10,8 @@ body{
     background-color: #0b203d;
 }
 header{
-    position: relative;
+    position: sticky;
+    top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -18,7 +19,6 @@ header{
     background-color: #0a192e;
     flex-wrap: wrap;
     border-bottom: 1px solid #e0e0e0;
-    position: sticky;
     z-index: 1000;
 }
 .logo {
@@ -91,7 +91,6 @@ header{
     border: 1px solid #e0e0e0;
     border-right: none;
     gap: 15px;
-    max-height: 0;
     overflow: hidden;
     }
     .navbar.active{
