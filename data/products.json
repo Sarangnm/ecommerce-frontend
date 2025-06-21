@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "Smart Watch",
+    "price": 1999,
+    "image": "assets/images/smartwatch.png"
+  },
+  {
+    "id": 2,
+    "title": "Headphones",
+    "price": 999,
+    "image": "assets/images/headphones.png"
+  },
+  {
+    "id": 3,
+    "title": "Smartphone",
+    "price": 25999,
+    "image": "assets/images/smartphone.png"
+  },
+  {
+    "id": 4,
+    "title": "Smart TV",
+    "price": 15999,
+    "image": "assets/images/smarttv.png"
+  }
+]
