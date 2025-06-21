@@ -7,7 +7,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #0b203d;
+    background: linear-gradient(to right, #0e2341, #1c3c68);
 }
 header{
     position: sticky;
@@ -42,7 +42,7 @@ header{
     border-color: #d52424;
     transition: .25s;
 }
-.navbar #active{
+.navbar .active{
     color: #fff;
     border-bottom: solid 2px #fff;
 }
@@ -86,8 +86,11 @@ header{
     min-height: 90vh;
     padding: 40px 20px;
     text-align: center;
-    background: linear-gradient(to right, #0e2341, #1c3c68);
+    
     color: #e0e0e0;
+}
+.hero-content{
+    animation: fadeIn 1s ease-out both;
 }
 .hero-content h1 {
     font-size: 3rem;
@@ -111,6 +114,63 @@ header{
 .cta-button:hover {
     background-color: #a91e1e;
 }
+.products {
+    padding: 60px 20px;
+    color: white;
+    text-align: center;
+}
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+.product-grid {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.product-card {
+    background: rgba(255, 255, 255, .1);
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 12px;
+    padding: 20px;
+    transition: transform 0.2s ease;
+}
+.product-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 2px #fff;
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.buy-btn {
+    background-color: #d52424;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.buy-btn:hover {
+    background-color: #a91e1e;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 @media (max-width: 768px) {
     .navbar {
         position: absolute;
@@ -119,7 +179,7 @@ header{
         width: 10em;
         display: none;
         flex-direction: column;
-        background: rgba(255, 255, 255, .1);
+        background: #0a192e;
         border: 2px solid rgba(255, 255, 255, .2);
         border-right: none;
         gap: 15px;
